@@ -15,10 +15,19 @@ body {
 .header {
   background: rgb(0 143 161);
   text-align: center;
-  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;  
   color: rgb(255,250,250,0.90);
   text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
 }
+.perfil{
+  
+
+}
+
+
 
 .topnav {
   overflow: hidden;
@@ -107,7 +116,27 @@ body {
   margin-top: auto;
 
 }
+.header {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el título y la imagen */
+  gap: 10px; /* Espacio entre el título y la imagen */
+  border: 1px solid #ccc; /* Borde opcional para visualizar el contenedor */
+  padding: 10px; /* Espacio interno del contenedor */
+}
+.perfil {
+  width: 35mm;  /* Ancho en milímetros */
+  height: 35mm; /* Alto en milímetros */
+  
+}
 
+.perfil img {
+  
+  width: 80%; /* Ajustar la imagen al ancho del contenedor */
+  height: 100%; /* Ajustar la imagen al alto del contenedor */
+  border-radius: 20%;
+
+
+}
 /* Estilo mejorado para las cards */
 .card {
   display: flex;
@@ -124,8 +153,11 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-8px); /* Eleva la card al hacer hover */
+  transform: translateY(-8px); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensificamos la sombra en hover */
+
+  border: 2px solid rgb(249, 255, 171);
+
 }
 
 .cardTitle {
